@@ -67,7 +67,7 @@ void initState() {
       final dataUrl = canvas.toDataUrl('image/png');
 
       setState(() {
-        capturedImages.add(dataUrl); // เก็บรูปถ่าย
+        capturedImages = [dataUrl, ...capturedImages];
       });
     }
   }
